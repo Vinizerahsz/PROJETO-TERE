@@ -2,8 +2,106 @@
     padding: 0;
     margin: 0;
  }
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+ body {
+   font-family: "Inter", sans-serif;
+ }
 
  #cabecalho {
-    
+    height: 15vh;
+    width: 100vw;
+    background-color: rgb(179, 17, 17);
 
+}
+
+#barra-pesquisa {
+   width: 100vw;
+   height: 144px;
+   background-color: rgb(23, 23, 23);
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+#pesquisar-estilo {
+   padding-left: 16px;
+   border-radius: 16px;
+   font-size: 16px;
+   width: 788px;
+   height: 60px;
+}
+
+#barra-preta {
+   background-color: black;
+   height: 68px;
+   width: 100vw;
+}
+
+#imagem-store {
+   width: 100vw;
+   height: 678px;
+}
+
+#barra-categorias {
+   display: flex;
+   height: 352px;
+   width: 100vw;
+   margin-top: -3.8px;
+   background-color: black;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+  
+   
+}
+
+.texto-categorias {
+   color: white;
+   font-size: 32px;
+}
+
+#caixa-circulo {
+  display: flex;
+  margin-left: -128px;
+  justify-content: space-around;
+}
+.circulo {
+   
+   margin-left:128px ;
+   background-color: white;
+   height: 120px;
+   width: 120px;
+   border-radius: 100%;
+}
+
+main {
+   width: 100vw;
+   height: 3000px;
+   background-color: rgb(14, 14, 14);
+}
+
+.produtos-linha1 {
+   display: flex;
+   justify-content: space-between;
+   width: 80vw;
+   height: 600px;
+   margin-left: 10vw;
+   align-items: center;
+}
+
+.imagens-linha1 {
+   background-color: white;
+   width: 272px;
+   height: 412px;
+   
+}
+h1 {
+   color: white;
+}
+
+.texto-linha1 {
+   position: absolute;
+   margin-top: -25%;
+   margin-left: -1.5%;
 }
