@@ -88,12 +88,16 @@ main {
    height: 600px;
    margin-left: 10vw;
    align-items: center;
+   
 }
 
 .imagens-linha1 {
+   display: flex;
    background-color: white;
    width: 272px;
    height: 412px;
+   justify-content: space-between;
+ 
    
 }
 h1 {
@@ -105,3 +109,61 @@ h1 {
    margin-top: -25%;
    margin-left: -1.5%;
 }
+
+h3 {
+   color: white;
+}
+
+#texto-produtos-linha1 {
+   display: flex;
+   margin-left: 10vw;
+   width: 80vw;
+   text-align: center;
+   
+}
+
+.textin {
+   margin-left: 15.6vw;
+}
+
+.textin4 {
+   margin-left: 15.0vw;
+
+}
+
+.textin5 {
+   margin-left: 15.2vw;
+
+}
+#alinhar-tudo {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+}
+
+.teste {
+   display: flex;
+   background-color: white;
+   width: 272px;
+   height: 412px;
+   
+}
+
+.teste-linha1 {
+   display: flex;
+   width: 80vw;
+   height: 600px;
+   margin-left: 10vw;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.imagens-linha2 {
+   background-color: white;
+   width: 272px;
+   height: 412px;
+   margin-left: 100px;
+}
+
