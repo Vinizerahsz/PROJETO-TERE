@@ -167,3 +167,32 @@ h3 {
    margin-left: 100px;
 }
 
+.imagem-exclusiva {
+   margin-top: 40%;
+   height: 952px;
+   width: 768px;
+   background-color: white;
+}
+
+.teste-linha3 {
+   display: flex;
+   width: 80vw;
+   height: 1080px;
+   margin-left: 10vw;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.imagens-linha3 {
+   margin-top: 9.3%;
+   background-color: white;
+   width: 384px;
+   height: 479px;
+   margin-left: 100px;
+}
+
+.exclusivo-alinhar {
+   display:flex;
+   flex-wrap: wrap;
+}
