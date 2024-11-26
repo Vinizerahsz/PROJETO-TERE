@@ -77,7 +77,7 @@
 
 main {
    width: 100vw;
-   height: 3000px;
+   height: auto;
    background-color: rgb(14, 14, 14);
 }
 
@@ -199,4 +199,62 @@ h3 {
    display:flex;
    flex-wrap: wrap;
    
+}
+
+.produtos-linha4 {
+   display: flex;
+   justify-content: space-between;
+   width: 80vw;
+   height: 600px;
+   margin-top: 25%;
+   margin-left: 10vw;
+   align-items: center;
+   
+}
+
+.texto-linha4 {
+   position: absolute;
+   margin-top: -25%;
+   margin-left: -1.5%;
+}
+
+.imagens-linha4 {
+   background-color: white;
+   width: 272px;
+   height: 412px;
+}
+
+.produtos-linha5 {
+   display: flex;
+   justify-content: space-between;
+   width: 80vw;
+   height: 600px;
+   margin-top:2%;
+   margin-left: 10vw;
+   align-items: center;
+   
+}
+
+.texto-linha5 {
+   position: absolute;
+   margin-top: -25%;
+   margin-left: -1.5%;
+}
+
+.imagens-linha5 {
+   background-color: white;
+   width: 272px;
+   height: 412px;
+}
+
+#cadastrar-final-pagina {
+   width: 100vw;
+   height: 440px;
+   background-color:#b31111;
+}
+
+#rodape {
+   background-color: rgb(14, 14, 14);
+   height: 800px;
+   width: 100vw;
 }
