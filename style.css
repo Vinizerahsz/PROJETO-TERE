@@ -8,14 +8,14 @@
    font-family: "Inter", sans-serif;
  }
 
- #cabecalho {
-    height: 15vh;
-    width: 100vw;
-    background-color: rgb(179, 17, 17);
+ .cabecalho-img {
+   width: 1920px;
+   height: 8vh;
+ }
 
-}
 
 #barra-pesquisa {
+   margin-top: -1%;
    width: 100vw;
    height: 144px;
    background-color: rgb(23, 23, 23);
@@ -29,7 +29,13 @@
    border-radius: 16px;
    font-size: 16px;
    width: 788px;
+   margin-left: 14%;
    height: 60px;
+}
+
+.img-categorias {
+   width: 100vw;
+   height: 352px;
 }
 
 #barra-preta {
@@ -44,6 +50,7 @@
 }
 
 #barra-categorias {
+
    display: flex;
    height: 352px;
    width: 100vw;
@@ -74,6 +81,7 @@
    width: 120px;
    border-radius: 100%;
 }
+
 
 main {
    width: 100vw;
@@ -124,11 +132,13 @@ h3 {
 
 #texto-produtos-linha1 {
    display: flex;
+   flex-wrap: wrap;
    margin-left: 10vw;
    width: 80vw;
    text-align: center;
    
 }
+
 
 .textin {
    margin-left: 15.6vw;
@@ -256,6 +266,8 @@ h3 {
 }
 
 #cadastrar-final-pagina {
+   display: flex;
+   flex-direction: column;
    width: 100vw;
    height: 440px;
    background-color:#b31111;
@@ -268,16 +280,20 @@ h3 {
 }
 
 .cadastre-se-footer {
+   margin-left: 3vw;
    font-size: 76px;
    font-weight: 800;
 }
 
 .entre-footer {
+   margin-left: 3vw;
+
    font-weight: 800;
    font-size: 48px;
 }
 
 .desc-footer {
+   margin-left: 3vw;
    font-size: 20px;
    font-weight: 500;
 }
@@ -286,4 +302,110 @@ h3 {
    max-width: 248px;
    max-height: 236px;
    border-radius: 46px;
+}
+
+
+#alinhar-rodape {
+   display:flex;
+   margin-top: -18%;
+   justify-content: center;
+}
+
+.central-de-relacionamento-texto {
+    margin-left: 3%;
+    margin-top: 2%;
+   
+    
+}
+
+.imagem-tire-suas-duvidas {
+   margin-top: 2%;
+   margin-left: 4%;
+}
+
+.img-vanguard {
+   margin-left: 3%;
+   margin-top: 10%;
+}
+
+.imagem-pagamentos {
+   display:flex;
+   margin-top: 5%;
+   margin-left: 6vw;
+   justify-content: center;
+ 
+}
+
+
+.privacidade-e-termos-rodape {
+   padding-right: 100px;
+  
+  
+}
+
+.mapa-do-site-rodape {
+   padding-right: 100px;
+}
+
+.espacamento-entre-linhas-footer{
+   margin-top: 1vw;
+   color: #4f4f4f;
+}
+
+.espacamento-entre-linhas-footer-cor-amarela{
+   margin-top: 1vw;
+   color: #b68a04;
+}
+
+.botao-submit {
+   width: 166px;
+   height: 60px;
+   border: white 1px solid;
+   border-radius: 16px;
+   font-size: 16px;
+   font-weight: 800;
+   color: #4f4f4f;
+   background-color: white;
+   
+   
+}
+
+.botao-submit:hover {
+   background-color: #b31111;
+   color: white;
+   cursor: pointer;
+}
+#digite-seu-nome{
+   
+   padding-left: 16px;
+   border-radius: 16px;
+   font-size: 16px;
+   width: 788px;
+   border: white 1px solid;
+   height: 60px;
+   color: #acb4c2;
+   font-weight: 800;
+}
+
+#digite-seu-email {
+   padding-left: 16px;
+   border-radius: 16px;
+   border: white 1px solid;
+   font-size: 16px;
+   width: 788px;
+   color: #acb4c2;
+   height: 60px;
+   font-weight: 800;
+}
+
+.cadastre-se-inputs {
+   
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.logo {
+   float: left;
+  
 }
