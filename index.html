@@ -12,6 +12,7 @@
     <header id="cabecalho">
         <img class="cabecalho-img" src="imagens/cabecalho-img.png" alt="">
     </header>
+    <div id="root"></div>
     <div id="barra-pesquisa">
         <img class="logo" src="imagens/vanguard-cabecalho.png" alt="">
         <input id="pesquisar-estilo" type="text" placeholder="Pesquisar...">
@@ -32,7 +33,7 @@
         <div id="alinhar-tudo">
             <div class="produtos-linha1">
                 <h1 class="texto-recomendado-linha1">Recomendados</h1>
-                <a class="redirecionar-pro-carrinho" href="carrinho.html?id=1">
+                <a class="redirecionar-pro-carrinho" href="./html/carrinho.html">
 
                     <div class="imagens-linha1" >
                     
@@ -206,6 +207,7 @@
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
     <script  type="module" src="script.js"></script>
+    <script type="module"src="dist/main.js"></script>
     <script  type="module">
         document.querySelectorAll('.redirecionar-pro-carrinho').forEach(link => {
     link.addEventListener('click', async (event) => {
