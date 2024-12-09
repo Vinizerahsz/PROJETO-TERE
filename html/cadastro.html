@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Produto</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+  <div class="cadastro-container">
+    <h2>Cadastrar Produto</h2>
+    <form id="form-cadastro">
+      <label>
+        ID:
+        <input type="number" id="id" required />
+      </label>
+
+      <label>
+        Nome:
+        <input type="text" id="nome" required />
+      </label>
+
+      <label>
+        Descrição:
+        <textarea id="descricao" required></textarea>
+      </label>
+
+      <label>
+        Preço:
+        <input type="text" id="preco" required />
+      </label>
+
+      <label>
+        URL da Imagem:
+        <input type="text" id="imagem" required />
+      </label>
+
+      <button type="button" onclick="handleCadastro()">Cadastrar</button>
+    </form>
+  </div>
+
+  <script>
+    function handleCadastro() {
+      const id = document.getElementById('id').value;
+      const nome = document.getElementById('nome').value;
+      const descricao = document.getElementById('descricao').value;
+      const preco = document.getElementById('preco').value;
+      const imagem = document.getElementById('imagem').value;
+
+      if (!id || !nome || !descricao || !preco || !imagem) {
+        alert('Todos os campos são obrigatórios!');
+        return;
+      }
+
+      const produto = { id, nome, descricao, preco, imagem };
+
+      // Enviar os dados para o servidor usando o fetch
+      fetch('http://localhost:8000/produtos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(produto), // Envia os dados no formato JSON
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert('Produto cadastrado com sucesso!');
+        window.location.href = '/'; // Redireciona após o cadastro
+      })
+      .catch(error => {
+        console.error('Erro ao cadastrar produto:', error);
+        alert('Erro ao cadastrar o produto!');
+      });
+    }
+  </script>
+</body>
+</html>

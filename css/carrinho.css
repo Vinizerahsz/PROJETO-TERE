@@ -1,0 +1,99 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #171717;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal */
+.container {
+    background-color: #B31111;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Lista de itens do carrinho */
+#itens-carrinho {
+    margin-bottom: 30px;
+}
+
+/* Cada item do carrinho */
+#itens-carrinho div {
+    background-color: #171717;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#itens-carrinho button {
+    background-color: #B31111;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#itens-carrinho button:hover {
+    background-color: #FF4C4C;
+}
+
+/* Botão de finalizar compra */
+#finalizar-compra {
+    background-color: #B31111;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-compra:hover {
+    background-color: #FF4C4C;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #itens-carrinho div {
+        flex-direction: column;
+        text-align: left;
+    }
+}

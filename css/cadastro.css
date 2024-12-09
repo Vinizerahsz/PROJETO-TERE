@@ -1,0 +1,104 @@
+/* Definindo a paleta de cores */
+:root {
+    --cor-principal: #B31111;
+    --cor-secundaria: #171717;
+    --cor-fundo: #FFFFFF;
+  }
+  
+  /* Configuração do corpo e fundo */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #171717; /* Cor de fundo escura */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo do container do formulário */
+  .cadastro-container {
+    background-color: var(--cor-fundo);
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo do título */
+  .cadastro-container h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos labels e inputs */
+  label {
+    margin-right: 20px;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="text"], input[type="number"], input[type="file"], textarea {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo do botão de cadastro */
+  button {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #9f0a0a;
+  }
+  
+  /* Estilo do botão "voltar" */
+  button.voltar-home {
+    background-color: #bbb;
+    margin-top: 15px;
+  }
+  
+  button.voltar-home:hover {
+    background-color: #999;
+  }
+  
+  /* Adicionando padding ao formulário */
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ajustes para os campos de texto (textarea) */
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Melhorando o espaçamento */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
